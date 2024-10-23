@@ -1,4 +1,4 @@
-import { Surface, Texture } from "deno_sdl2";
+import { Surface, Texture } from "@divy/sdl2";
 import { Entity } from "./Entity.ts";
 import { canvas } from "./main.ts";
 import getImage from "./utils/sprites.ts";

@@ -1,4 +1,4 @@
-import { Rect, Surface, Texture } from "deno_sdl2";
+import { Rect, Surface, Texture } from "@divy/sdl2";
 import { Entity } from "./Entity.ts";
 import { canvas } from "./main.ts";
 import getImage from "./utils/sprites.ts";
@@ -9,7 +9,7 @@ export class Dino extends Entity {
   playerImgJumpRun1: Texture;
   playerImgJumpRun2: Texture;
   playerImgJump: Texture;
-  canvas: import("deno_sdl2").Canvas;
+  canvas: import("@divy/sdl2").Canvas;
   // 300, 50, 300, 300
   constructor() {
     super({

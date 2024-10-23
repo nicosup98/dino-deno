@@ -1,4 +1,4 @@
-import { Surface, Texture, TextureCreator } from "deno_sdl2";
+import { Surface, Texture, TextureCreator } from "@divy/sdl2";
 
 export default function getImage(
   image: string,

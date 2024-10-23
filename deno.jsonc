@@ -3,7 +3,6 @@
     "allowJs": false,
     "strict": true
   },
-  "importMap": "import_map.json",
   "lint": {
     "files": {
       "include": ["."]
@@ -25,5 +24,11 @@
       "singleQuote": false,
       "proseWrap": "preserve"
     }
+  },
+  "tasks": {
+    "dev":"deno run -RENW --allow-ffi --allow-run main.ts"
+  },
+  "imports": {
+    "@divy/sdl2": "jsr:@divy/sdl2@^0.14.0"
   }
 }

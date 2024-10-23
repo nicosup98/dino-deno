@@ -1,4 +1,4 @@
-import { EventType, Rect, Surface, Texture, WindowBuilder } from "deno_sdl2";
+import { EventType, Rect, Surface, Texture, WindowBuilder } from "@divy/sdl2";
 import { Dino } from "./Dino.ts";
 import { Cacti } from "./Cactus.ts";
 import getImage from "./utils/sprites.ts";
@@ -167,9 +167,9 @@ for await (const event of window.events()) {
       break;
     case EventType.KeyDown:
       // Space
-      console.log(event);
+      // console.log(event);
       if (event.keysym.sym == 32 && !gameOver) {
-        console.log(event);
+        // console.log(event);
         intro = false;
         if (!playing) {
           playing = true;
